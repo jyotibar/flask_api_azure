@@ -19,9 +19,9 @@ tasks = [
 ]
 
 
-@app.route('/home', methods=['GET'])
+@app.route('/', methods=['GET'])
 def home():
-    return 'Hello, This is test api'
+    return 'Hello, This is test api. I added this line to check CICD.'
 
 
 @app.route('/get-task/<int:task_id>', methods=['GET'])
